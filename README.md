@@ -5,8 +5,10 @@
 
 開啟終端機，確認AWS ip位置，並且確定pem檔路徑。
 
+2-xx-xxx-xxx-xxx 為該AWS上之路徑
 ```
-ssh -i "yourKey_path.pem" ubuntu@ec2-52-199-201-241.ap-northeast-1.compute.amazonaws.com
+
+ssh -i "yourKey_path.pem" ubuntu@ec2-xx-xxx-xxx-xxx.ap-northeast-1.compute.amazonaws.com
 
 ```
 
@@ -43,8 +45,10 @@ ssh -i "yourKey_path.pem" ubuntu@ec2-52-199-201-241.ap-northeast-1.compute.amazo
 ### Step 5 :
 利用以下指令將檔案傳輸至AWS上
 
+2-xx-xxx-xxx-xxx 為該AWS上之路徑
 ```
-pscp -i e:\hotaicyber.ppk -l ubuntu ec2-ubuntu "your file path" ec2-52-199-201-241.ap-northeast-1.compute.amazonaws.com:/home/ubuntu/your path
+
+pscp -i e:\yourKeyPath.ppk -l ubuntu ec2-ubuntu "your file path" ec2-xx-xxx-xxx-xxx.ap-northeast-1.compute.amazonaws.com:/home/ubuntu/your_path
 
 ```
 
